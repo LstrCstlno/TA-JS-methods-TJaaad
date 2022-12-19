@@ -140,11 +140,13 @@ Write a function named `callMe` which
 */
 
 function callMe(cb) {
-  var final = cb(num);
+  var final = cb();
   return final;
 }
 
-let num = 5
+let test = function () {
+  return 23
+}
 
 
 // Data Starts (Don't change this)

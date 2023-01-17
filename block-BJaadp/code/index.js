@@ -73,17 +73,30 @@ that fruit has appeared in the array. Store it in new variable fruitsObj
 Output: 
 {banana: 2, cherry: 3, orange: 3, apple: 2, fig: 1}
 */
-let fruitsObj = {}
-fruitBasket.sort()
+let fruitsObj = fruitBasket.reduce((acc,cv) =>{
+  if (acc[cv]) {
+    acc[cv] = acc[cv] + 1;
+  }else{
+  acc[cv] = 1
+  }
+  return acc
+},{})
 /* 
 
 Use the fruitBasket array to create an array of array. Each array will contain two values name of fruit and number of times
 that fruit appeared. Use the variable defined above (fruitsObj). To get all the keys of an array you can use Object.keys()
 
+
+
 Output: 
 
 [['banana', 2], ['cherry', 3], ['orange', 3], ['apple', 2], ['fig', 1]]
 */
+
+Object.keys(fruitsObj).reduce((acc,cv) => {
+  acc = acc.concat([[cv, fruitsObj[cv]]]);
+  return acc
+},[])
 
 const data = [
   [1, 2, 3],

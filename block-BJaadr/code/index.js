@@ -6,29 +6,38 @@ function countAllPeople() {
 }
 
 function peopleByHouses() {
+  let allPeople = got.houses.map((house) => house.people.length)
+  return allPeople.reduce((acc,cv) => acc + cv)
 }
 
 function everyone() {
+  let allPeople = got.houses.map((house) => house.people.length)
+  return allPeople.reduce((acc,cv) => acc + cv)
 }
 
 function nameWithS() {
-  // your code goes here
+  let allPeople = got.houses.map((house) => house.people.length)
+  return allPeople.reduce((acc,cv) => acc + cv)
 }
 
 function nameWithA() {
-  // your code goes here
+  let allPeople = got.houses.map((house) => house.people.length)
+  return allPeople.reduce((acc,cv) => acc + cv)
 }
 
 function surnameWithS() {
-  // your code goes here
+  let allPeople = got.houses.map((house) => house.people.length)
+  return allPeople.reduce((acc,cv) => acc + cv)
 }
 
 function surnameWithA() {
-  // your code goes here
+  let allPeople = got.houses.map((house) => house.people.length)
+  return allPeople.reduce((acc,cv) => acc + cv)
 }
 
 function peopleNameOfAllHouses() {
-  // your code goes here
+  let allPeople = got.houses.map((house) => house.people.length)
+  return allPeople.reduce((acc,cv) => acc + cv)
 }
 
 // // Testing your result after writing your function
